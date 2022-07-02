@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>sentiment analysis</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+    		<h2 class='container-heading'><span>Sentiment Analysis</span> for Amazon reviews</h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+        
+            <section id="Features" class="page-section colord">
+                <div class="container">
+                <div class="row"> 
+                <a href="home.html" style="cursor:pointer;">
+                    <!-- item -->
+                    <div class="col-md-3 text-center"> 
+                    <div class="box-item">
+                    <i class="circle"><img src="images/5.png" alt="" /></i>
+                    <h3 style="color:black">Single Sentiment Analysis</h3>
+                    <p style="color:black">This model will take input as a Review and provide the sentiment result. </p>
+                    </div>
+                    </div>
+                </a>
+                </div>
+                </div>
+                    <!-- end: --> 
+                <div onclick="location.href='link.html';" style="cursor:pointer;">
+                    <!-- item -->
+                    <div class="col-md-3 text-center">
+                    <div class="box-item">
+                    <i class="circle"> <img src="images/1.png" alt="" /></i>
+                    <h3>LInk based review analysis</h3>
+                    <p>This model will take input as a review link and provide analysis based on the ML model and EDA steps</p>
+                    </div>
+                    </div>
+                    <!-- end: --> 
+                </div>
+                </div>
+                </div>
+            </section>    
+        
+
+        <!-- Footer -->
+        <div class='footer'>
+            <div class="contact">
+                <a target="_blank" href="https://github.com/anupam9546"><i class="fab fa-github fa-lg contact-icon"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/anupam-mathur-5a6a59152/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+            </div>
+            <p class='footer-description'>Made by Anupam,Gautam,Tarun</p>
+        </div>
+
+    </body>
+</html>

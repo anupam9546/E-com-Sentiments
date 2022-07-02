@@ -1,0 +1,365 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+  	flex-direction: column;
+}
+
+/* Website Title */
+.container{
+	padding: 30px;
+	position: relative;
+	background: linear-gradient(45deg, #ffffff, #ffffff, #f9f9f9, #eeeeee, #e0e4e1, #d7e1ec);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+@keyframes change-gradient {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.container-heading{
+    margin: 0;
+}
+
+.container span{
+    color: #ff0000;
+}
+
+.description p{
+    font-style: italic;
+    font-size: 14px;
+    margin: 3px 0 0;
+}
+
+/* Text Area */
+.ml-container{
+    margin: 30px 0;
+	flex: 1 0 auto;
+}
+
+.message-box{
+    margin-bottom: 20px;
+}
+
+/* Predict Button */
+.my-cta-button{
+    background: #f9f9f9;
+    border: 2px solid #000000;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #8c8c8c;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+    font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.my-cta-button:hover{
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+.my-cta-button:active{
+    box-shadow: 0 0;
+}
+
+
+/* Footer */
+.footer{
+    font-size: 14px;
+	padding: 20px;
+	flex-shrink: 0;
+	position: relative;
+	background: linear-gradient(45deg, #ffffff, #ffffff, #f9f9f9, #eeeeee, #e0e4e1, #d7e1ec);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Result */
+.results{
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+}
+
+.danger{
+    color: #ff0000;
+}
+
+.safe{
+    color: green;
+}
+
+.gif{
+	width: 30%;
+}
+.box-item{
+	background: #EFEFEF;
+	}
+	.box-item p {
+	font-size: 15px;
+	line-height: 1.5em;
+	padding: 0px 12px 26px !important;
+	}
+	.box-item:before {
+	content: "";
+	width: 60px;
+	height: 60px;
+	background: yellow;
+	float: right;
+	position: absolute;
+	z-index: -1;
+	top: -3px;
+	right: 12px;
+	}
+	.box-item:after {
+	content: "";
+	width: 60px;
+	height: 60px;
+	background: yellow;
+	float: right;
+	position: absolute;
+	z-index: -1;
+	bottom: 12px;
+	left: 12px; 
+	}
+
+	a,a:visited,a:active,a:hover {
+		color: rgb(86, 126, 201);
+		text-decoration: underline;
+	  }
+	  
+	  section {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: relative;
+	  }
+	  
+	  .bg-image {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		content: "";
+		z-index: 0;
+	  }
+	  
+	  .form-horizontal .form-group {
+		margin-right: 0;
+		margin-left: 0;
+	  }
+	  
+	  .form-horizontal .btn {
+		display: block;
+		margin: 0 auto;
+	  }
+	  
+	  .user-signup__submit {
+		line-height: .5em;
+	  }
+	  
+	  .user-signup__form {
+		margin-left: -5px;
+	  }
+	  
+	  .user-signup__form-group {
+		padding: 0 0 0 5px;
+		position: relative;
+	  }
+	  
+	  @media all and (max-width: 767px) {
+		.form-horizontal .mt-table,.form-horizontal .mt-table--full,.form-horizontal .mt-table--centered,.form-horizontal .mt-table--full,.form-horizontal .mt-td--centered-vertical {
+		  display: block;
+		}
+	  }
+	  
+	  @media all and (min-width: 768px) {
+		.form-horizontal .user-signup__col-2 {
+		  width: 1%;
+		}
+	  }
+	  
+	  .floating-signup__wrap {
+		position: fixed;
+		z-index: 5;
+		padding: 10px;
+	  }
+	  
+	  .floating-signup {
+		position: relative;
+		padding: 10px 20px;
+	  }
+	  
+	  .floaty-vertical--middle {
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	  }
+	  
+	  @media all and (max-width: 480px) {
+		.floaty-unfloat-at--xs.floating-signup__wrap {
+		  position: static;
+		  display: block;
+		  top: auto;
+		  right: auto;
+		  bottom: auto;
+		  left: auto;
+		  -webkit-transform: translateY(0);
+		  transform: translateY(0);
+		  float: none;
+		}
+	  }
+	  
+	  .insert--image {
+		display: block;
+		position: relative;
+	  }
+	  
+	  .insert--image.wrap-off-align-center {
+		margin-left: auto;
+		margin-right: auto;
+	  }
+	  
+	  .spacer {
+		z-index: 0;
+		width: 2.52px;
+		margin-bottom: -15px;
+		margin-top: -15px;
+	  }
+	  
+	  .clean-hr {
+		z-index: 0;
+		width: 100%;
+		max-width: 579.5px;
+		margin-top: 28px;
+		margin-bottom: 28px;
+	  }
+	  
+	  .m-lg-v {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	  }
+	  
+	  .mt-table,.mt-table--full {
+		display: table;
+	  }
+	  
+	  .mt-table--full {
+		width: 100%;
+	  }
+	  
+	  .mt-td,.mt-td--centered-vertical {
+		display: table-cell;
+	  }
+	  
+	  .mt-td--centered-vertical {
+		vertical-align: middle;
+	  }
+	  
+	  .loading-state {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		background: url(/res/loading.gif) 50% 45% no-repeat;
+	  }
+	  
+	  .rel {
+		position: relative;
+	  }
+	  
+	  .bg-image {
+		/* photo from: https://www.pexels.com/photo/dawn-landscape-mountains-nature-1852/ */
+		background-image: url(/res/background.jpg);
+		background-attachment: scroll;
+		background-position: 50% 50%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: transparent;
+		opacity: .69;
+	  }
+	  
+	  h1 {
+		font-size: 40px;
+	  }
+	  
+	  .form-control__input {
+		border-width: 0;
+		border-radius: 0;
+		font-size: 14px;
+		height: 50px;
+	  }
+	  
+	  .user-signup__submit {
+		border-width: 0;
+		border-radius: 0;
+		font-size: 14px;
+		padding-right: 20px;
+		padding-left: 20px;
+		height: 50px;
+		background-color: #00a651;
+		color: #FFF;
+	  }
+	  
+	  .user-signup__submit:hover {
+		background-color: #1cd861;
+		color: #FFF;
+	  }
+	  
+	  @media all and (min-width:481px) {
+		p {
+		  font-size: 22px;
+		}
+	  
+		h1 {
+		  font-size: 60px;
+		}
+	  }
+	  
+	  @media all and (min-width:769px) {
+		p {
+		  font-size: 22px;
+		}
+	  
+		h1 {
+		  font-size: 75px;
+		}
+	  }
+ 
+	@media screen and (max-width: 500px) {
+		.column {
+		  width: 100%;
+		}
+	  }
